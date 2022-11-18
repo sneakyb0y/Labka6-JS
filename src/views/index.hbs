@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{>head}}
+</head>
+<body>
+    {{>header}}
+    <main role="main">
+        <div class='album py-5 bg-dark'>
+            <div class='container'>
+                <div class="row d-flex flex-column justify-content-center">
+                    {{#each posts}}
+                        {{#each this}}
+                            <div class="card d-flex flex-row justify-content-center m-3" style="width: 85%;">
+                                <div class="card-body">
+                                    <h4 class="card-title" style="font-size: 1.4rem;">{{title}}</h4>
+                                </div>
+                                <div class="card-body d-flex justify-content-end">
+                                    <h6 class="text-center" style="font-size: 0.8rem;">By {{createdBy}}</h6>
+                                </div>
+                                <div class="card-body d-flex justify-content-end">
+                                    <a class="btn btn-primary bg-dark" href="/posts/{{id}}">Read</a>
+                                </div>
+                            </div>
+                        {{/each}}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </main>
+    {{>footer}}
+</body>
+</html>

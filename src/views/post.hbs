@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {{>head}}
+</head>
+
+<body>
+    {{>header}}
+    <div class="bg-dark text-white">
+
+        <div class="container ">
+            <h1 class="display-2 text-center">{{post.title}}</h1>
+            <h6 class="text-center">By {{post.createdBy}}</h6>
+            <div style="font-size: 2em;">
+                <p class="text-justify">{{post.description}}</p>
+            </div>
+        </div>
+
+        <div class="container py-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-12 col-lg-10">
+                    {{#checkArray comments}}
+                        <h1 class="display-5₴">Comments:</h1>
+                        {{#each comments}}
+                            {{>comment}}
+                        {{/each}}
+                    {{else}}
+                        <h1 class="display-5">No comments here</h1>
+                    {{/checkArray}}
+                </div>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+</body>
+
+</html>

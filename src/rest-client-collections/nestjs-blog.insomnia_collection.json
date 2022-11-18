@@ -1,0 +1,673 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2022-10-25T20:00:59.695Z",
+    "__export_source": "insomnia.desktop.app:v2022.6.0",
+    "resources": [
+        {
+            "_id": "req_174273c8ddfe4b4f858e012b879b3822",
+            "parentId": "fld_6068cc95e28e48039742542942c6df99",
+            "modified": 1666726327096,
+            "created": 1666621880834,
+            "url": "http://localhost:3000/auth/me",
+            "name": "me",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "id": "pair_8f638f6a416e46c48fccf46a031ccc93",
+                    "name": "",
+                    "value": "",
+                    "description": ""
+                }
+            ],
+            "headers": [
+                {
+                    "id": "pair_3dde7e69d1a14a80bcee3bd2d7fc7faf",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "description": ""
+                },
+                {
+                    "id": "pair_ad7286035fe14754be12863cd129c742",
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwidXNlcklkIjo3LCJpYXQiOjE2NjY3MjYyOTAsImV4cCI6MTY2NjcyNjY1MH0.hNKxESkQiXtxXP_-oacHzF93lxqFHk70mkpM7QEz300",
+                    "description": ""
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666621880834,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_6068cc95e28e48039742542942c6df99",
+            "parentId": "fld_749055c9678b4f80bd6780cbb05493f4",
+            "modified": 1666612803478,
+            "created": 1666612803478,
+            "name": "auth",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1666612803478,
+            "_type": "request_group"
+        },
+        {
+            "_id": "fld_749055c9678b4f80bd6780cbb05493f4",
+            "parentId": "wrk_6d5ac70af1cc440f81585b0e76547fa3",
+            "modified": 1663701918669,
+            "created": 1663701918669,
+            "name": "nestjs-blog",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1663701918669,
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_6d5ac70af1cc440f81585b0e76547fa3",
+            "parentId": null,
+            "modified": 1663701918674,
+            "created": 1663305806557,
+            "name": "New Document",
+            "description": "",
+            "scope": "design",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_00ecf93703b048699278455d71514726",
+            "parentId": "fld_6068cc95e28e48039742542942c6df99",
+            "modified": 1666727563116,
+            "created": 1666621737768,
+            "url": "http://localhost:3000/auth/login",
+            "name": "login",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"username\": \"user1\",\n\t\"password\": \"testPassword12345!\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_bb9ae2d3195b4366bb088d4c01387cbd"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666621737768,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_07c0866071d640a5854dcd2942e6fa23",
+            "parentId": "fld_6068cc95e28e48039742542942c6df99",
+            "modified": 1666726294786,
+            "created": 1666612804953,
+            "url": "http://localhost:3000/auth/register",
+            "name": "register",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"email\": \"emailXXX123@gmail.com\",\n\t\"username\": \"user1\",\n\t\"password\": \"testPassword12345!\",\n\t\"confirmPassword\": \"testPassword12345!\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_76348d11752d43998917bba1172a0bb4"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666612804953,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_5b7d7357fe064633b625c08960e24123",
+            "parentId": "fld_161d76416d404336924d9b550ac5658b",
+            "modified": 1666686006014,
+            "created": 1666597812816,
+            "url": "http://localhost:3000/user",
+            "name": "create",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"email\": \"emailSample@gmail.com\",\n\t\"username\": \"testUsername\",\n\t\"password\": \"testPassword12345!\",\n\t\"confirmPassword\": \"testPassword12345!\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_7520295e573941e29e8c041b86343369"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666685831203,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_161d76416d404336924d9b550ac5658b",
+            "parentId": "fld_749055c9678b4f80bd6780cbb05493f4",
+            "modified": 1666597808902,
+            "created": 1666597808902,
+            "name": "user",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1666597808902,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_5aa20378fc3e47f7bf4723135f80de95",
+            "parentId": "fld_161d76416d404336924d9b550ac5658b",
+            "modified": 1666686007697,
+            "created": 1666598270244,
+            "url": "http://localhost:3000/user",
+            "name": "getAllUsers",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1666685831178,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_23b655684d1c4c26abe6d013f3d46057",
+            "parentId": "fld_161d76416d404336924d9b550ac5658b",
+            "modified": 1666692814064,
+            "created": 1666685831153,
+            "url": "http://localhost:3000/user/5",
+            "name": "delete",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1666685831153,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_26099c2302ec47fea47de5d8167737e6",
+            "parentId": "fld_5084b7b6f096416e82622d1fa3c604e5",
+            "modified": 1666727712007,
+            "created": 1663703174641,
+            "url": "http://localhost:3000/comments",
+            "name": "create",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"postId\": 6,\n\t\"text\": \"Test auth comment\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_4032562aba7441aebb5f70eda74e16b7"
+                },
+                {
+                    "id": "pair_41534a2c39b045ef88b057bc901642e9",
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwidXNlcklkIjo3LCJpYXQiOjE2NjY3Mjc1NjMsImV4cCI6MTY2NjcyNzkyM30.cZCuG6v_3t0FYdDhanE_hzzjM0_gdm7ECqjQkZfyyuI",
+                    "description": ""
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1663703261944.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_5084b7b6f096416e82622d1fa3c604e5",
+            "parentId": "fld_749055c9678b4f80bd6780cbb05493f4",
+            "modified": 1663703147300,
+            "created": 1663703147300,
+            "name": "comments",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1663703147300,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_dbda3110c44d48fbae96589c41cc6db6",
+            "parentId": "fld_5084b7b6f096416e82622d1fa3c604e5",
+            "modified": 1666727715571,
+            "created": 1663703230354,
+            "url": "http://localhost:3000/comments/14",
+            "name": "getById",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1663703261932,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_38c2467f726a4e0cbee2a7ecf01c64ad",
+            "parentId": "fld_5084b7b6f096416e82622d1fa3c604e5",
+            "modified": 1666728000155,
+            "created": 1663703246516,
+            "url": "http://localhost:3000/comments/14",
+            "name": "edit",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"text\": \"Edited comment1\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_f85887b27b2f4dc681da0aee2e2e579d"
+                },
+                {
+                    "id": "pair_bf6b8e3470d543a79bcfc6cb10de4efc",
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwidXNlcklkIjo3LCJpYXQiOjE2NjY3Mjc1NjMsImV4cCI6MTY2NjcyNzkyM30.cZCuG6v_3t0FYdDhanE_hzzjM0_gdm7ECqjQkZfyyuI",
+                    "description": ""
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1663703246516,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_d1f79e08e434400bbf8a806688b9a951",
+            "parentId": "fld_5084b7b6f096416e82622d1fa3c604e5",
+            "modified": 1666727694206,
+            "created": 1663703261907,
+            "url": "http://localhost:3000/comments/13",
+            "name": "delete",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "id": "pair_c201f9d735034d0896f5597e101febb2",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "description": ""
+                },
+                {
+                    "id": "pair_94d1806a817c4082ab8520af6f7f4c5b",
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwidXNlcklkIjo3LCJpYXQiOjE2NjY3Mjc1NjMsImV4cCI6MTY2NjcyNzkyM30.cZCuG6v_3t0FYdDhanE_hzzjM0_gdm7ECqjQkZfyyuI",
+                    "description": ""
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1663703174591,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_eb74501bcfbc46b5903531a10ebae443",
+            "parentId": "fld_f10ddf3bb9ab47b7a341d550c2da84b1",
+            "modified": 1666727813987,
+            "created": 1665413742269,
+            "url": "http://localhost:3000/posts/6/comments/",
+            "name": "getAllComments",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "id": "pair_6e5cf7660b7d4770a58d1f60ed8a9457",
+                    "name": "page",
+                    "value": "1",
+                    "description": ""
+                },
+                {
+                    "id": "pair_10fbc7c7d7754543a4f41ce27b4bcf6f",
+                    "name": "size",
+                    "value": "2",
+                    "description": ""
+                }
+            ],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1665413742269,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_f10ddf3bb9ab47b7a341d550c2da84b1",
+            "parentId": "fld_749055c9678b4f80bd6780cbb05493f4",
+            "modified": 1663701918659,
+            "created": 1663701918659,
+            "name": "posts",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1663701918659,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_c3d9faf550954c1e90cbb4a4b097faf7",
+            "parentId": "fld_f10ddf3bb9ab47b7a341d550c2da84b1",
+            "modified": 1663704549729,
+            "created": 1663701918653,
+            "url": "http://localhost:3000/posts",
+            "name": "getAll",
+            "description": "The HTTP `GET` request method is meant to retrieve data from a server. The data\nis identified by a unique URI (Uniform Resource Identifier). \n\nA `GET` request can pass parameters to the server using \"Query String \nParameters\". For example, in the following request,\n\n> http://example.com/hi/there?hand=wave\n\nThe parameter \"hand\" has the value \"wave\".\n\nThis endpoint echoes the HTTP headers, request parameters and the complete\nURI requested.",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1663701918653,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_28eac0975f7f46849f2223d0f83824b3",
+            "parentId": "fld_f10ddf3bb9ab47b7a341d550c2da84b1",
+            "modified": 1666727503249,
+            "created": 1663701918647,
+            "url": "http://localhost:3000/posts",
+            "name": "create",
+            "description": "The HTTP `GET` request method is meant to retrieve data from a server. The data\nis identified by a unique URI (Uniform Resource Identifier). \n\nA `GET` request can pass parameters to the server using \"Query String \nParameters\". For example, in the following request,\n\n> http://example.com/hi/there?hand=wave\n\nThe parameter \"hand\" has the value \"wave\".\n\nThis endpoint echoes the HTTP headers, request parameters and the complete\nURI requested.",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"title\": \"New title. Check auth post.\",\n\t\"description\": \"......\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_b8dddcdfd8bd463187eaaa96851229ee"
+                },
+                {
+                    "id": "pair_2e6cad2c020345f494968cf71618fc1f",
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwidXNlcklkIjo3LCJpYXQiOjE2NjY3MjYyOTAsImV4cCI6MTY2NjcyNjY1MH0.hNKxESkQiXtxXP_-oacHzF93lxqFHk70mkpM7QEz300",
+                    "description": "",
+                    "disabled": false
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1663701918647,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_8f3f7b6572da435d88b4b0518208388f",
+            "parentId": "fld_f10ddf3bb9ab47b7a341d550c2da84b1",
+            "modified": 1666272883464,
+            "created": 1663701918641,
+            "url": "http://localhost:3000/posts/6",
+            "name": "getById",
+            "description": "The HTTP `GET` request method is meant to retrieve data from a server. The data\nis identified by a unique URI (Uniform Resource Identifier). \n\nA `GET` request can pass parameters to the server using \"Query String \nParameters\". For example, in the following request,\n\n> http://example.com/hi/there?hand=wave\n\nThe parameter \"hand\" has the value \"wave\".\n\nThis endpoint echoes the HTTP headers, request parameters and the complete\nURI requested.",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1663701918641,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_458124ebdc7d45308fbeced84237b6f6",
+            "parentId": "fld_f10ddf3bb9ab47b7a341d550c2da84b1",
+            "modified": 1666726730292,
+            "created": 1663701918632,
+            "url": "http://localhost:3000/posts/7",
+            "name": "edit",
+            "description": "The HTTP `GET` request method is meant to retrieve data from a server. The data\nis identified by a unique URI (Uniform Resource Identifier). \n\nA `GET` request can pass parameters to the server using \"Query String \nParameters\". For example, in the following request,\n\n> http://example.com/hi/there?hand=wave\n\nThe parameter \"hand\" has the value \"wave\".\n\nThis endpoint echoes the HTTP headers, request parameters and the complete\nURI requested.",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"title\": \"Edited 7-th post\",\n\t\"description\": \"Update......\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_95d19c5500704d86ab0fb0406ae89845"
+                },
+                {
+                    "id": "pair_78b803660c4c4ed1b42c352777796d74",
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwidXNlcklkIjo3LCJpYXQiOjE2NjY3MjY2MjEsImV4cCI6MTY2NjcyNjk4MX0.3Mq88rIfny0rG5vJLjdiV2cG9DQ6kFYwXnH9TVhWAR0",
+                    "description": ""
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1663701918632,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_be66e599bfc94f4186672e9df8aa7533",
+            "parentId": "fld_f10ddf3bb9ab47b7a341d550c2da84b1",
+            "modified": 1666726733297,
+            "created": 1663701918620,
+            "url": "http://localhost:3000/posts/7",
+            "name": "delete",
+            "description": "The HTTP `GET` request method is meant to retrieve data from a server. The data\nis identified by a unique URI (Uniform Resource Identifier). \n\nA `GET` request can pass parameters to the server using \"Query String \nParameters\". For example, in the following request,\n\n> http://example.com/hi/there?hand=wave\n\nThe parameter \"hand\" has the value \"wave\".\n\nThis endpoint echoes the HTTP headers, request parameters and the complete\nURI requested.",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "id": "pair_1f7fdf8616aa44ce85e8d3312df0b480",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "description": ""
+                },
+                {
+                    "id": "pair_10dbd0aa5ce74f71a09bcfdf85cf1cca",
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwidXNlcklkIjo3LCJpYXQiOjE2NjY3MjY2MjEsImV4cCI6MTY2NjcyNjk4MX0.3Mq88rIfny0rG5vJLjdiV2cG9DQ6kFYwXnH9TVhWAR0",
+                    "description": ""
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1663701918620,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_e537dc62a0f7499bb8d479507ee24e9b",
+            "parentId": "fld_749055c9678b4f80bd6780cbb05493f4",
+            "modified": 1663701918607,
+            "created": 1663701918607,
+            "url": "http://localhost:3000/",
+            "name": "GET Index",
+            "description": "The HTTP `GET` request method is meant to retrieve data from a server. The data\nis identified by a unique URI (Uniform Resource Identifier). \n\nA `GET` request can pass parameters to the server using \"Query String \nParameters\". For example, in the following request,\n\n> http://example.com/hi/there?hand=wave\n\nThe parameter \"hand\" has the value \"wave\".\n\nThis endpoint echoes the HTTP headers, request parameters and the complete\nURI requested.",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1663701918607,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_3216dc9db491024acfad3775c8120a0e7544ee9b",
+            "parentId": "wrk_6d5ac70af1cc440f81585b0e76547fa3",
+            "modified": 1663305806601,
+            "created": 1663305806601,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1663305806602,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_3216dc9db491024acfad3775c8120a0e7544ee9b",
+            "parentId": "wrk_6d5ac70af1cc440f81585b0e76547fa3",
+            "modified": 1666645039941,
+            "created": 1663305806612,
+            "name": "Default Jar",
+            "cookies": [
+                {
+                    "key": "__Host-GAPS",
+                    "value": "1:zRbGCHZSJ5Osup5D5TjNTeoOxB7MQA:Ed8vQMHhv5Ueazx3",
+                    "expires": "2024-10-23T20:57:20.000Z",
+                    "domain": "localhost",
+                    "path": "/",
+                    "secure": true,
+                    "httpOnly": true,
+                    "extensions": [
+                        "Priority=HIGH"
+                    ],
+                    "hostOnly": true,
+                    "creation": "2022-10-24T19:35:42.751Z",
+                    "lastAccessed": "2022-10-24T20:57:19.940Z",
+                    "id": "6852932611617397"
+                }
+            ],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_b2a147564a6646ffa51f33e67ddbfb15",
+            "parentId": "wrk_6d5ac70af1cc440f81585b0e76547fa3",
+            "modified": 1663705284707,
+            "created": 1663305806588,
+            "fileName": "nestjs-blog",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        },
+        {
+            "_id": "uts_9580d6d6398240ccb28593d1fac0451b",
+            "parentId": "wrk_6d5ac70af1cc440f81585b0e76547fa3",
+            "modified": 1663305806668,
+            "created": 1663305806668,
+            "name": "Example Test Suite",
+            "_type": "unit_test_suite"
+        }
+    ]
+}
