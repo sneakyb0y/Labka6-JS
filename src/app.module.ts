@@ -17,6 +17,8 @@ import { AdminModule } from '@adminjs/nestjs';
 import AdminJS from 'adminjs';
 import { Resource, Database } from '@adminjs/typeorm';
 import { DataSource } from 'typeorm';
+import { resource } from './adminjs/resource';
+import { componentLoader } from './adminjs/components';
 
 AdminJS.registerAdapter({ Resource, Database });
 
@@ -50,7 +52,8 @@ const authenticate = async (email: string, password: string) => {
       useFactory: () => ({
         adminJsOptions: {
           rootPath: '/admin',
-          resources: [Comments, Posts, User],
+          resources: [Comments, User, resource],
+          componentLoader
         },
         auth: {
           authenticate,
